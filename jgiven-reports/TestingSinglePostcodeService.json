@@ -1,0 +1,84 @@
+{
+  "className": "TestingSinglePostcodeService",
+  "name": "Testing Single Postcode Service",
+  "scenarios": [
+    {
+      "className": "TestingSinglePostcodeService",
+      "testMethodName": "testSinglePostcodeServiceResponse",
+      "description": "Test single postcode service response",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "i call the single postcode service with a valid postcode",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "i call the single postcode service with a valid postcode"
+                },
+                {
+                  "value": "g50hb",
+                  "argumentInfo": {
+                    "argumentName": "postcode",
+                    "formattedValue": "g50hb"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 3890215892,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "the json status codeis200",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the json status codeis200"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 160876,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "the postcode is in the response body",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the postcode is in the response body"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 201557424,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 6495683184
+        }
+      ],
+      "durationInNanos": 6495683184,
+      "executionStatus": "SUCCESS"
+    }
+  ],
+  "tagMap": {}
+}
